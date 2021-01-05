@@ -1,0 +1,19 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,CAAC,CAAC;EACA,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,UAAU,EAAE,UAAU;CACvB",
+    "sources": [
+        "../scss/style.scss",
+        "../scss/base/_reset.scss",
+        "../scss/helper/_mixin.scss",
+        "../scss/helper/_variable.scss",
+        "../scss/layout/_carousel.scss",
+        "../scss/layout/_contact.scss",
+        "../scss/layout/_footer.scss",
+        "../scss/layout/_header.scss",
+        "../scss/layout/_news.scss",
+        "../scss/layout/_rating.scss",
+        "../scss/layout/_schedule.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
