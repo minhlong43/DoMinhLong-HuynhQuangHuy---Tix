@@ -1,0 +1,38 @@
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: unset;
+  }
+  .col-4,
+  .col-6 {
+    padding: 0 0.5rem;
+  }
+  #news .list p {
+    font-size: 0.875rem !important;
+  }
+  .main .row {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h2 {
+      font-size: 1.5rem;
+    }
+    .col-6 {
+      flex: 0 0 80%;
+      max-width: 80%;
+      .img-mobile {
+        padding: 0 27.5% !important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  #schedule {
+    .film .info {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+}

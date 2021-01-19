@@ -1,0 +1,54 @@
+#contact {
+  background-image: url(../../img/backapp.jpg);
+  background-size: contain;
+  color: #fff;
+  .main {
+    max-width: 58.75rem;
+    margin: auto;
+    padding: 7.5rem 0 5rem;
+  }
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .slide {
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    .img-mobile {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      padding: 0 26.5%;
+    }
+    .mobile {
+      position: absolute;
+      padding: 1.5% 29.3% 0 29.3%;
+      top: 0;
+      left: 0;
+      width: 100%;
+      border: 5px;
+    }
+    .slick-list {
+      border-radius: 1.25rem;
+    }
+  }
+  .button {
+    background-color: #fb4226;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  h2 {
+    padding-bottom: 1rem;
+  }
+  span {
+    text-decoration: underline;
+  }
+  span:hover {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,123 @@
+// .slick-prev:before,
+// .slick-next:before {
+//   color: #000 !important;
+// }
+// .slider p {
+//   font-size: 2rem;
+//   font-weight: bold;
+//   line-height: 100px;
+//   color: #666;
+//   margin: 10px 0;
+//   text-align: center;
+//   background-color: #e0e0e0;
+// }
+
+#schedule {
+  max-width: 60rem;
+  display: block;
+  padding-bottom: 2rem;
+
+  .slider p {
+    background-color: transparent;
+  }
+  .film {
+    padding: 0 0.75rem;
+    top: 0;
+    img {
+      width: 100%;
+      border-radius: 0.5rem;
+    }
+    .play {
+      opacity: 0;
+      color: #fff;
+      position: absolute;
+      top: 35%;
+      left: 40%;
+      i {
+        width: 3rem;
+        height: 3rem;
+        font-size: 0.75rem;
+      }
+    }
+    .rate_top {
+      background-color: rgba(12, 27, 54, 0.8);
+      color: #fff;
+      text-align: center;
+      border-radius: 5px;
+      padding: 0 5px;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      .star img {
+        max-width: 0.5rem;
+      }
+      .star {
+        margin: 0;
+        padding-bottom: 0.5rem;
+      }
+    }
+    .rate {
+      background-color: rgba(12, 27, 54, 0.8);
+      color: #fff;
+      text-align: center;
+      border-radius: 5px;
+      padding: 0 5px;
+      position: absolute;
+      bottom: 3rem;
+      right: 1rem;
+      .star img {
+        max-width: 0.5rem;
+      }
+      .star {
+        margin: 0;
+        padding-bottom: 0.5rem;
+      }
+    }
+    .hover {
+      position: absolute;
+      top: 0.5rem;
+      left: 0;
+      visibility: hidden;
+      opacity: 0;
+      background: linear-gradient(to left, #fb4226, #ce3017 100%);
+      padding: 0.625rem;
+      width: 100%;
+      text-align: center;
+      border-radius: 5px;
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+    .info {
+      visibility: visible;
+      opacity: 1;
+      font-weight: bold;
+      color: #000;
+      font-size: 0.75rem;
+      .minutes {
+        font-size: 0.675rem;
+        color: #4a4a4a;
+      }
+    }
+    :hover {
+      cursor: pointer;
+      .play {
+        opacity: 1;
+      }
+    }
+  }
+  // .film:hover .img {
+  //   background: linear-gradient(to top, #000000, transparent);
+  // }
+  .film:hover .hover {
+    visibility: visible;
+    opacity: 1;
+  }
+  .film:hover .info {
+    visibility: hidden;
+    opacity: 0;
+  }
+  @include colorP();
+  @include tab();
+}

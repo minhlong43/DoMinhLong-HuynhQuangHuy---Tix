@@ -1,7 +1,540 @@
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: unset;
+  }
+  .col-4,
+  .col-6 {
+    padding: 0 0.5rem;
+  }
+  #news .list p {
+    font-size: 0.875rem !important;
+  }
+  .main .row {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .main .row h2 {
+    font-size: 1.5rem;
+  }
+  .main .row .col-6 {
+    flex: 0 0 80%;
+    max-width: 80%;
+  }
+  .main .row .col-6 .img-mobile {
+    padding: 0 27.5% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #schedule .film .info {
+    display: none;
+  }
+}
+
+#contact {
+  background-image: url(../../img/backapp.jpg);
+  background-size: contain;
+  color: #fff;
+}
+
+#contact .main {
+  max-width: 58.75rem;
+  margin: auto;
+  padding: 7.5rem 0 5rem;
+}
+
+#contact .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#contact .slide {
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#contact .slide .img-mobile {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  padding: 0 26.5%;
+}
+
+#contact .slide .mobile {
+  position: absolute;
+  padding: 1.5% 29.3% 0 29.3%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 5px;
+}
+
+#contact .slide .slick-list {
+  border-radius: 1.25rem;
+}
+
+#contact .button {
+  background-color: #fb4226;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+#contact h2 {
+  padding-bottom: 1rem;
+}
+
+#contact span {
+  text-decoration: underline;
+}
+
+#contact span:hover {
+  cursor: pointer;
+}
+
+#news {
+  padding-bottom: 3rem;
+}
+
+#news img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+#news img:hover {
+  cursor: pointer;
+}
+
+#news h5 {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+#news h5:hover {
+  color: #e9572b;
+  cursor: pointer;
+}
+
+#news p {
+  font-size: 0.875rem;
+}
+
+#news .item img {
+  width: 1.25rem;
+  margin: 0.75rem;
+  transition: all 0.2s;
+}
+
+#news .item img:hover {
+  cursor: pointer;
+  width: 1.325rem;
+}
+
+#news .item {
+  color: #b2b2b2;
+}
+
+#news .list img {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 0.5rem;
+}
+
+#news .list p {
+  font-size: 1rem;
+}
+
+#news .list p:hover {
+  color: #e9572b;
+  cursor: pointer;
+}
+
+#news button {
+  color: #b2b2b2;
+  border: 1px solid #b2b2b2;
+  padding: 0.5rem 1.785rem;
+  border-radius: 5px;
+}
+
+#news button:hover {
+  background-color: #e9572b;
+  color: #fff;
+}
+
+#news .nav-tabs {
+  border-bottom: none;
+  display: flex;
+  justify-content: center;
+}
+
+#news .nav-tabs .nav-item .nav-link.active {
+  border-color: #fff;
+  color: #fa5238;
+  font-size: 1.5rem;
+}
+
+#news .nav-tabs .nav-item .nav-link {
+  color: #000;
+  border: unset;
+  transition: all 0.2s;
+}
+
+#news .nav-tabs .nav-item :hover {
+  font-size: 1.5rem;
+}
+
+#news .nav-tabs .nav-item {
+  font-size: 1.25rem;
+}
+
+#intro .scroll {
+  overflow: scroll;
+  height: 40rem;
+}
+
+#intro .col-1 {
+  padding-right: 0;
+  height: 40rem;
+}
+
+#intro .col-1 .nav-link img {
+  height: 3rem;
+  opacity: 0.7;
+}
+
+#intro .col-1 img:hover,
+#intro .col-1 img:first-child {
+  opacity: 1;
+}
+
+#intro .col-4 {
+  padding-right: 0;
+  height: 40rem;
+}
+
+#intro .col-4 img {
+  height: 3rem;
+  margin: 0.375rem;
+}
+
+#intro .col-4 hr {
+  width: 85%;
+}
+
+#intro .col-4 p {
+  margin-bottom: 0;
+  font-size: 0.875rem;
+}
+
+#intro .col-4 span {
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+#intro .col-4 a {
+  color: #e9572b;
+  text-decoration: none;
+  font-size: 0.785rem;
+}
+
+#intro .col-4 b {
+  color: #b2b2b2;
+  font-weight: normal;
+  font-size: 0.785rem;
+}
+
+#intro .nav-link {
+  opacity: 0.7;
+}
+
+#intro .nav-link:hover,
+#intro .nav-link.active {
+  opacity: 1;
+}
+
+#intro .nav-tabs .nav-link {
+  border: none;
+  padding: 0.5rem 0 0 0;
+}
+
+#intro .col-7 .item {
+  margin: 0.875rem 0;
+  font-size: 0.785rem;
+}
+
+#intro .col-7 .item .info {
+  font-weight: 500;
+}
+
+#intro .col-7 .item img {
+  height: 3rem;
+  margin: 0.375rem;
+}
+
+#intro .col-7 .item hr {
+  width: 85%;
+}
+
+#intro .col-7 .item .minutes {
+  color: #b2b2b2;
+}
+
+#intro .col-7 .item h5 {
+  font-size: 0.875rem;
+}
+
+#intro .col-7 .item .bot {
+  flex-wrap: wrap;
+}
+
+#intro .col-7 .item .time {
+  font-weight: 300;
+  margin: 0.25rem;
+  border-radius: 5px;
+  padding: 0.35rem 0.5rem;
+  background-color: #fafafa;
+}
+
+#intro .col-7 .item .time b {
+  color: #00ac4d;
+  font-size: 1rem;
+}
+
+#intro .col-7 .item .time span {
+  color: #b2b2b2;
+  font-size: 0.75rem;
+}
+
+#intro .col-7 .item .red,
+#intro .col-7 .item .green {
+  border: 1px solid transparent;
+  border-radius: 0.2rem;
+  margin-right: 0.5rem;
+  color: #fff;
+  font-size: 0.825rem;
+}
+
+#intro .col-7 .item .green {
+  background-color: #00ac4d;
+  padding: 0 0.7rem;
+}
+
+#intro .col-7 .item .red {
+  background-color: #fb4226;
+  padding: 0 0.2rem;
+}
+
+#intro .col-11 {
+  padding-left: 0;
+}
+
+#intro .bhd {
+  color: #8ec646;
+}
+
+#intro .cns {
+  color: #df0d7a;
+}
+
+#intro .ddc {
+  color: #9c9c9c;
+}
+
+#intro .mega {
+  color: #e5a813;
+}
+
+#intro .dcine {
+  color: #000;
+}
+
+#intro .lotte {
+  color: #ca4137;
+}
+
+#intro .bg {
+  background: url(../../img/back-news1.png);
+  background-size: 100%;
+  height: 10rem;
+}
+
+#schedule {
+  max-width: 60rem;
+  display: block;
+  padding-bottom: 2rem;
+}
+
+#schedule .slider p {
+  background-color: transparent;
+}
+
+#schedule .film {
+  padding: 0 0.75rem;
+  top: 0;
+}
+
+#schedule .film img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+#schedule .film .play {
+  opacity: 0;
+  color: #fff;
+  position: absolute;
+  top: 35%;
+  left: 40%;
+}
+
+#schedule .film .play i {
+  width: 3rem;
+  height: 3rem;
+  font-size: 0.75rem;
+}
+
+#schedule .film .rate_top {
+  background-color: rgba(12, 27, 54, 0.8);
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 0 5px;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+#schedule .film .rate_top .star img {
+  max-width: 0.5rem;
+}
+
+#schedule .film .rate_top .star {
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+#schedule .film .rate {
+  background-color: rgba(12, 27, 54, 0.8);
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 0 5px;
+  position: absolute;
+  bottom: 3rem;
+  right: 1rem;
+}
+
+#schedule .film .rate .star img {
+  max-width: 0.5rem;
+}
+
+#schedule .film .rate .star {
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+#schedule .film .hover {
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  background: linear-gradient(to left, #fb4226, #ce3017 100%);
+  padding: 0.625rem;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#schedule .film .hover a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#schedule .film .info {
+  visibility: visible;
+  opacity: 1;
+  font-weight: bold;
+  color: #000;
+  font-size: 0.75rem;
+}
+
+#schedule .film .info .minutes {
+  font-size: 0.675rem;
+  color: #4a4a4a;
+}
+
+#schedule .film :hover {
+  cursor: pointer;
+}
+
+#schedule .film :hover .play {
+  opacity: 1;
+}
+
+#schedule .film:hover .hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+#schedule .film:hover .info {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#schedule .red,
+#schedule .green {
+  border: 1px solid transparent;
+  border-radius: 0.2rem;
+  margin-right: 0.5rem;
+  color: #fff;
+  font-size: 0.825rem;
+}
+
+#schedule .green {
+  background-color: #00ac4d;
+  padding: 0 0.7rem;
+}
+
+#schedule .red {
+  background-color: #fb4226;
+  padding: 0 0.2rem;
+}
+
+#schedule .nav-tabs {
+  border-bottom: none;
+  display: flex;
+  justify-content: center;
+}
+
+#schedule .nav-tabs .nav-item .nav-link.active {
+  border-color: #fff;
+  color: #fa5238;
+  font-size: 1.5rem;
+}
+
+#schedule .nav-tabs .nav-item .nav-link {
+  color: #000;
+  border: unset;
+  transition: all 0.2s;
+}
+
+#schedule .nav-tabs .nav-item :hover {
+  font-size: 1.5rem;
+}
+
+#schedule .nav-tabs .nav-item {
+  font-size: 1.25rem;
 }
 /*# sourceMappingURL=style.css.map */

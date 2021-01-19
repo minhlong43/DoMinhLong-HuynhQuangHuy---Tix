@@ -2,11 +2,12 @@
 
 @import "./helper/mixin";
 @import "./helper/variable";
+@import "./helper/responsive";
 
 @import "./layout/carousel";
 @import "./layout/contact";
 @import "./layout/footer";
 @import "./layout/header";
 @import "./layout/news";
-@import "./layout/rating";
+@import "./layout/intro";
 @import "./layout/schedule";
