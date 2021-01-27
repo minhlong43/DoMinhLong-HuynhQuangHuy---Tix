@@ -27,6 +27,22 @@
     }
   }
 }
+.intro {
+  .col-1 {
+    flex: 0 0 15%;
+    max-width: 15%;
+  }
+  .col-11 {
+    flex: 0 0 85%;
+    max-width: 85%;
+    padding: 0;
+  }
+  .col-4,
+  .col-8 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
 @media screen and (max-width: 768px) {
   #schedule {
     .film .info {
@@ -35,20 +51,35 @@
   }
 }
 @media screen and (max-width: 680px) {
-  #intro .item,
-  .tab-pane {
-    flex-direction: column;
-    .nav {
+  .intro {
+    .wrapper {
+      border: unset !important;
+    }
+    .row {
+      display: flex;
       flex-wrap: unset;
       flex-direction: column;
-      align-items: flex-start;
+      margin-left: 0;
     }
+    .col-1 {
+      flex: 0 0 30%;
+      max-width: 30%;
+    }
+    .col-11,
     .col-4,
-    .col-7 {
+    .col-8 {
       flex: 0 0 100%;
       max-width: 100%;
+    }
+    .wrapper .col-8 {
+      padding-left: 1rem;
     }
   }
 }
 @media screen and (max-width: 576px) {
+}
+@media screen and (max-width: 480px) {
+  #intro .main {
+    display: none;
+  }
 }
